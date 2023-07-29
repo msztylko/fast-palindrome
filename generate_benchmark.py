@@ -45,7 +45,9 @@ def main():
         palindrome = valid_palindromes[idx]
         print(palindrome)
         generated_valid_palindromes.append(palindrome)
-        print(randomize_case(palindrome))
+        random_case_palindrome = randomize_case(palindrome)
+        print(random_case_palindrome)
+        generated_valid_palindromes.append(random_case_palindrome)
         print(break_single_char(palindrome))
         print(random_string())
         NUM_TESTCASES -= 4
