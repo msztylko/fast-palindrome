@@ -6,11 +6,11 @@ On a quest for the fastest palindrome algorithm.
 
 ## benchmark
 
-Script [generate_benchmark.py](https://github.com/msztylko/fast-palindrome/blob/master/generate_benchmark.py) is used to generate 100 million test cases where:
- - 25% are correct palindromes
- - 25% are palindromes with cases randomly changed to lower or upper
- - 25% are broken palindromes with character in the middle changed to a different letter
- - 25% are random strings of letters
+Script [generate_benchmark.py](https://github.com/msztylko/fast-palindrome/blob/master/generate_benchmark.py) is used to generate 200 million test cases where:
+ - 1% are correct palindromes
+ - 1% are palindromes with cases randomly changed to lower or upper
+ - 49% are broken palindromes with character in the first or last quater of the string changed to a different letter
+ - 49% are random strings of letters
 
 You can generate benchmark with:
 
