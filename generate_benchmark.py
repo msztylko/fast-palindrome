@@ -1,7 +1,7 @@
 from random import randint, choice, random
 from string import ascii_letters
 
-NUM_TESTCASES = 100_000_000
+NUM_TESTCASES = 200_000_000
 
 def randomize_case(string):
     new_string = list(string)
@@ -48,9 +48,10 @@ def main():
         random_case_palindrome = randomize_case(palindrome)
         print(random_case_palindrome)
         generated_valid_palindromes.append(random_case_palindrome)
-        print(break_single_char(palindrome))
-        print(random_string())
-        NUM_TESTCASES -= 4
+        for _ in range(49):
+            print(break_single_char(palindrome))
+            print(random_string())
+        NUM_TESTCASES -= 100
         idx = (idx + 1) % l
 
     with open('expected_palindromes.txt' ,'w') as f:
