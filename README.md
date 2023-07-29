@@ -1,2 +1,2 @@
 # fast-palindrome
-On a quest for fastest palindrome algorithm
+On a quest for the fastest palindrome algorithm.
