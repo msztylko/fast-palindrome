@@ -119,3 +119,10 @@ real	0m19.074s
 user	0m18.367s
 sys	0m0.398s
 ```
+
+## Why?
+
+In a [python-extensions](https://github.com/msztylko/python-extensions/tree/master) project I was working on Assembly extension to Python for the same palindrome problem.
+It turned out that I cannot directly translate [straightforward palindrome](https://github.com/msztylko/fast-palindrome/blob/master/c_palindrome_1.c) to Assembly (yet).   
+
+I documented my process for translating [C to Assembly](https://github.com/msztylko/python-extensions/blob/master/C2Assembly.md), creating a couple C programs along the way. This gave me the idea for this project where I no longer try to get to hand-written Assembly, but simply get the fastest implementation of palindrome algorithm. 
