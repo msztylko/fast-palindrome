@@ -126,3 +126,9 @@ In a [python-extensions](https://github.com/msztylko/python-extensions/tree/mast
 It turned out that I cannot directly translate [straightforward palindrome](https://github.com/msztylko/fast-palindrome/blob/master/c_palindrome_1.c) to Assembly (yet).   
 
 I documented my process for translating [C to Assembly](https://github.com/msztylko/python-extensions/blob/master/C2Assembly.md), creating a couple C programs along the way. This gave me the idea for this project where I no longer try to get to hand-written Assembly, but simply get the fastest implementation of palindrome algorithm. 
+
+Most optimizations are described in [C2Assembly](https://github.com/msztylko/python-extensions/blob/master/C2Assembly.md).
+I got the idea for [version 4](https://github.com/msztylko/fast-palindrome/blob/master/c_palindrome_4.c) when I was staring for too long at `man ascii` table.
+Final optimizations come from the binary representation of ascii characters we are checking here:
+1. All the whitespace characters I want to ignore have value lower than '@' and I used this fact to skip them.
+2. Lower- and uppercase latters differ by a single bit `0b00100000` and I used it to simplify conditional logic.
