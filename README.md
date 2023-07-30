@@ -20,3 +20,34 @@ python generate_benchmark.py > cases.txt
 this will also create a file `expected_palindromes.txt` to verify that tested programs produce expected output.
 
 [`test.sh`](https://github.com/msztylko/fast-palindrome/blob/master/test.sh) can be used to run the benchmark like: `./test.sh ./c_palindrome_1`
+
+## Results
+
+### V1
+[c_palindrome_1.c](https://github.com/msztylko/fast-palindrome/blob/master/c_palindrome_1.c) - straightforward implementation with calls to standard library.
+
+##### O1
+
+`gcc -O1 c_palindrome_1.c -o c_palindrome_1`
+
+```bash
+./test.sh ./c_palindrome_1                                                                                      ok
+
+real	0m22.617s
+user	0m21.928s
+sys	0m0.359s
+```
+
+##### O3
+
+`gcc -O3 c_palindrome_1.c -o c_palindrome_1`
+
+```bash
+./test.sh ./c_palindrome_1                                                                                      
+ok
+
+real	0m21.255s
+user	0m20.455s
+sys	0m0.418s
+```
+
