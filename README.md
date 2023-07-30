@@ -70,3 +70,52 @@ real	0m20.229s
 user	0m19.450s
 sys	0m0.412s
 ```
+
+### V3
+[c_palindrome_3.c](https://github.com/msztylko/fast-palindrome/blob/master/c_palindrome_3.c) - simplified conditional checks.
+
+`gcc -O1 c_palindrome_3.c -o c_palindrome_3`
+
+```bash
+./test.sh ./c_palindrome_3                                                                                     ok
+
+real	0m20.565s
+user	0m19.821s
+sys	0m0.425s
+```
+
+`gcc -O3 c_palindrome_3.c -o c_palindrome_3`
+
+```bash
+./test.sh ./c_palindrome_3                                                                                    
+ok
+
+real	0m20.603s
+user	0m19.477s
+sys	0m0.404s
+```
+
+### V4
+
+[c_palindrome_4.c](https://github.com/msztylko/fast-palindrome/blob/master/c_palindrome_4.c) - even simpler conditional logic.
+
+`gcc -O1 c_palindrome_4.c -o c_palindrome_4`
+
+```bash
+./test.sh ./c_palindrome_4                                                                                     ok
+
+real	0m19.061s
+user	0m18.357s
+sys	0m0.407s
+```
+
+`gcc -O3 c_palindrome_4.c -o c_palindrome_4`
+
+```bash
+./test.sh ./c_palindrome_4                                                                                    
+ok
+
+real	0m19.074s
+user	0m18.367s
+sys	0m0.398s
+```
