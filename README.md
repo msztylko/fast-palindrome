@@ -18,3 +18,5 @@ You can generate benchmark with:
 python generate_benchmark.py > cases.txt
 ```
 this will also create a file `expected_palindromes.txt` to verify that tested programs produce expected output.
+
+[`test.sh`](https://github.com/msztylko/fast-palindrome/blob/master/test.sh) can be used to run the benchmark like: `./test.sh ./c_palindrome_1`
